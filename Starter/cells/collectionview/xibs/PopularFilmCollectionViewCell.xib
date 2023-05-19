@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularFilmCollectionViewCell" customModule="Starter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOo-bL-H6F">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="225"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="afL-hZ-Ptz">
+                                <rect key="frame" x="0.0" y="0.0" width="236" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="0LP-98-BOa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="The Secrets of Dumbledore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDM-Eu-XRU">
+                                <rect key="frame" x="0.0" y="176" width="236" height="17.333333333333343"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7x-mM-Ryg">
+                                <rect key="frame" x="0.0" y="201.33333333333334" width="17" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66I-A8-HVc" customClass="RatingControl" customModule="Starter" customModuleProvider="target">
+                                <rect key="frame" x="25" y="201.33333333333334" width="80" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="f5W-Zm-96w"/>
+                                    <constraint firstAttribute="width" constant="80" id="oGC-e2-D1O"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                        <size key="value" width="16" height="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.052547555240000002" green="0.10269630790000001" blue="0.1793854704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="iDM-Eu-XRU" firstAttribute="leading" secondItem="zOo-bL-H6F" secondAttribute="leading" id="0vk-0E-s08"/>
+                            <constraint firstItem="66I-A8-HVc" firstAttribute="centerY" secondItem="v7x-mM-Ryg" secondAttribute="centerY" id="61f-SH-Jef"/>
+                            <constraint firstAttribute="trailing" secondItem="iDM-Eu-XRU" secondAttribute="trailing" id="EkE-6V-M8P"/>
+                            <constraint firstItem="afL-hZ-Ptz" firstAttribute="leading" secondItem="zOo-bL-H6F" secondAttribute="leading" id="XJ7-tg-QHM"/>
+                            <constraint firstAttribute="trailing" secondItem="afL-hZ-Ptz" secondAttribute="trailing" id="c4a-1i-oeG"/>
+                            <constraint firstItem="v7x-mM-Ryg" firstAttribute="top" secondItem="iDM-Eu-XRU" secondAttribute="bottom" constant="8" id="dS0-w7-GIZ"/>
+                            <constraint firstItem="afL-hZ-Ptz" firstAttribute="top" secondItem="zOo-bL-H6F" secondAttribute="top" id="f62-5z-yd0"/>
+                            <constraint firstItem="66I-A8-HVc" firstAttribute="leading" secondItem="v7x-mM-Ryg" secondAttribute="trailing" constant="8" id="fcF-PE-IfY"/>
+                            <constraint firstItem="v7x-mM-Ryg" firstAttribute="leading" secondItem="zOo-bL-H6F" secondAttribute="leading" id="k9X-iw-PcZ"/>
+                            <constraint firstAttribute="bottom" secondItem="v7x-mM-Ryg" secondAttribute="bottom" constant="8" id="lBB-yG-3mM"/>
+                            <constraint firstItem="iDM-Eu-XRU" firstAttribute="top" secondItem="afL-hZ-Ptz" secondAttribute="bottom" constant="16" id="uQt-Um-xag"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zOo-bL-H6F" secondAttribute="bottom" id="RXH-po-PaW"/>
+                <constraint firstAttribute="trailing" secondItem="zOo-bL-H6F" secondAttribute="trailing" id="Xzj-yr-gQL"/>
+                <constraint firstItem="zOo-bL-H6F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bze-wa-RLg"/>
+                <constraint firstItem="zOo-bL-H6F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xWh-t1-exm"/>
+            </constraints>
+            <size key="customSize" width="236" height="226"/>
+            <point key="canvasLocation" x="85.496183206106863" y="27.464788732394368"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image1" width="275" height="146.66667175292969"/>
+    </resources>
+</document>

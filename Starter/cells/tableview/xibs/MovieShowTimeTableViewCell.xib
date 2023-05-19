@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="235" id="KGk-i7-Jjw" customClass="MovieShowTimeTableViewCell" customModule="Starter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="476" height="235"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2z-X4-125">
+                        <rect key="frame" x="20" y="10" width="436" height="160"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Movie Showtimes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhU-l1-Mzj">
+                                <rect key="frame" x="16" y="16.000000000000004" width="218" height="49.333333333333343"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEE MORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX4-Tv-7fV">
+                                <rect key="frame" x="16" y="126.66666666666664" width="74.666666666666671" height="17.333333333333329"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_map" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-bL-3ha">
+                                <rect key="frame" x="370" y="55" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XzY-jy-Tjc"/>
+                                    <constraint firstAttribute="height" constant="50" id="s1o-is-hCr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="color_movie_show_bg"/>
+                        <constraints>
+                            <constraint firstItem="dX4-Tv-7fV" firstAttribute="leading" secondItem="F2z-X4-125" secondAttribute="leading" constant="16" id="91v-U8-6vm"/>
+                            <constraint firstAttribute="trailing" secondItem="tt3-bL-3ha" secondAttribute="trailing" constant="16" id="FRq-DV-dQq"/>
+                            <constraint firstItem="IhU-l1-Mzj" firstAttribute="top" secondItem="F2z-X4-125" secondAttribute="top" constant="16" id="QXL-id-Av3"/>
+                            <constraint firstItem="IhU-l1-Mzj" firstAttribute="width" secondItem="F2z-X4-125" secondAttribute="width" multiplier="0.5" id="RF7-p2-pJ5"/>
+                            <constraint firstAttribute="height" constant="160" id="UfR-u4-KYR"/>
+                            <constraint firstItem="tt3-bL-3ha" firstAttribute="centerY" secondItem="F2z-X4-125" secondAttribute="centerY" id="aGQ-Ha-hSJ"/>
+                            <constraint firstAttribute="bottom" secondItem="dX4-Tv-7fV" secondAttribute="bottom" constant="16" id="hh4-SJ-5D1"/>
+                            <constraint firstItem="IhU-l1-Mzj" firstAttribute="leading" secondItem="F2z-X4-125" secondAttribute="leading" constant="16" id="xFs-fI-hAF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="F2z-X4-125" secondAttribute="trailing" constant="20" id="Fse-68-QDv"/>
+                    <constraint firstItem="F2z-X4-125" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Tb7-pf-fon"/>
+                    <constraint firstAttribute="bottom" secondItem="F2z-X4-125" secondAttribute="bottom" constant="10" id="VPE-W8-fTt"/>
+                    <constraint firstItem="F2z-X4-125" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tFU-kP-mao"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.052547555240000002" green="0.10269630790000001" blue="0.1793854704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="lblSeeMore" destination="dX4-Tv-7fV" id="OfH-n4-UFE"/>
+                <outlet property="viewForBackground" destination="F2z-X4-125" id="vCO-a7-I2O"/>
+            </connections>
+            <point key="canvasLocation" x="258.01526717557249" y="86.971830985915503"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_map" width="306.66665649414062" height="164.66667175292969"/>
+        <namedColor name="color_movie_show_bg">
+            <color red="0.12200000137090683" green="0.14499999582767487" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

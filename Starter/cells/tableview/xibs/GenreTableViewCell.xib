@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="260" id="KGk-i7-Jjw" customClass="GenreTableViewCell" customModule="Starter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="497" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="260"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ocv-uZ-iJP">
+                        <rect key="frame" x="0.0" y="10" width="497" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="o6U-q2-f1G"/>
+                        </constraints>
+                        <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fze-rW-nLg">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mdW-Nn-7w9">
+                        <rect key="frame" x="0.0" y="70" width="497" height="225"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="225" id="nlp-82-Q2s"/>
+                        </constraints>
+                        <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sid-JN-jJJ">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" red="0.052547555240000002" green="0.10269630790000001" blue="0.1793854704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mdW-Nn-7w9" secondAttribute="trailing" id="S6a-Gq-AxX"/>
+                    <constraint firstAttribute="trailing" secondItem="ocv-uZ-iJP" secondAttribute="trailing" id="aXr-tW-DBk"/>
+                    <constraint firstItem="mdW-Nn-7w9" firstAttribute="top" secondItem="ocv-uZ-iJP" secondAttribute="bottom" constant="10" id="dUp-yw-oy1"/>
+                    <constraint firstItem="mdW-Nn-7w9" firstAttribute="top" secondItem="ocv-uZ-iJP" secondAttribute="bottom" constant="10" id="eU1-jV-gsd"/>
+                    <constraint firstItem="mdW-Nn-7w9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gbh-0T-Jlb"/>
+                    <constraint firstAttribute="bottom" secondItem="mdW-Nn-7w9" secondAttribute="bottom" id="ocQ-e8-6mD"/>
+                    <constraint firstItem="ocv-uZ-iJP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qiv-Xs-IaB"/>
+                    <constraint firstItem="ocv-uZ-iJP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="veE-0T-h5T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionViewGenre" destination="ocv-uZ-iJP" id="eVJ-XY-ggb"/>
+                <outlet property="collectionViewMovie" destination="mdW-Nn-7w9" id="qSP-ho-jWg"/>
+            </connections>
+            <point key="canvasLocation" x="274.04580152671753" y="95.774647887323951"/>
+        </tableViewCell>
+    </objects>
+</document>
